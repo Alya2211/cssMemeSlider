@@ -1,0 +1,50 @@
+body {
+	background-color: rgb(119, 119, 118);
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper__conteiner {}
+
+.wrapper__conteiner_content {}
+
+.photo__input {
+	display: none;
+}
+
+.photo__container {
+	width: 100%;
+	overflow: hidden;
+	border-radius: 1em;
+}
+
+.photo__conteiner_content {}
+
+.dev_1 {}
+
+.photo__conteiner_buttons_menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em 0 0;
+}
+
+.photo__conteiner_buttons_menu_content {}
+
+.photo__conteiner_bottom_button_1 {}
+
+.about__button_in_button {}
+
+.is_active {}
+
+.about__button_in_button2 {}
+
+.text__conteiner {}
+
+.text__container_content {}
+
+.text {}
