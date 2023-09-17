@@ -18,23 +18,21 @@ body {
 }
 
 body {
-	background-color: rgb(209, 209, 208);
-	display: flex;
+	background-color: rgb(247, 229, 169);
+	margin: 20px;
 }
 
 .wrapper__conteiner {
 	height: 650px;
-	margin: 100px auto 0;
-	position: relative;
+	margin: 200px auto 0;
 	width: 600px;
 }
 
 .photo__container {
 	height: inherit;
 	overflow: hidden;
-	position: relative;
 	width: inherit;
-	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	margin-bottom: 20px;
 }
 
 .photos {
@@ -43,6 +41,7 @@ body {
 	position: absolute;
 	width: inherit;
 	z-index: 0;
+	border-radius: 10px;
 }
 
 #control_photo_1:checked~.photo__container>.photo_1,
@@ -51,6 +50,14 @@ body {
 #control_photo_4:checked~.photo__container>.photo_4 {
 	opacity: 1;
 	z-index: 1;
+	transition: ease-in-out .5s;
+}
+
+.wrapper__conteiner_text {
+	max-width: 100px;
+	font-family: 'Inclusive Sans', sans-serif;
+	font-size: 14px;
+	line-height: 20px;
 }
 
 .lines {
@@ -67,16 +74,17 @@ body {
 #control_photo_4:checked~.wrapper__conteiner_text>.line4 {
 	opacity: 1;
 	z-index: 2;
+	transition: ease-in-out .5s;
 }
 
 .wrapper__conteiner>input {
 	display: none;
+	padding: 10px
 }
 
-.wrapper__conteiner .wrapper__conteiner_controls {
-	left: 50%;
-	margin-left: -98px;
-	position: absolute;
+.wrapper__conteiner_controls {
+	display: flex;
+	justify-content: end;
 }
 
 .wrapper__conteiner label:after {
@@ -84,9 +92,7 @@ body {
 	content: " ";
 	display: block;
 	height: 12px;
-	left: -4px;
-	position: absolute;
-	top: -4px;
+text-align: center;
 	width: 12px;
 	border-radius: 50%;
 }
@@ -94,18 +100,26 @@ body {
 .wrapper__conteiner label {
 	cursor: pointer;
 	display: inline-block;
-	height: 8px;
-	margin: 25px 12px 0 16px;
+	height: 15px;
+	margin: 2px 1px 0 10px;
 	position: relative;
-	width: 8px;
+	width: 15px;
 	border-radius: 50%;
-	transition: background ease-in-out .5s;
+	transition: ease-in-out .5s;
 }
 
-.wrapper__conteiner label:hover,
+.wrapper__conteiner label:checked,
 #control_photo_1:checked~.wrapper__conteiner_controls label:nth-of-type(1),
 #control_photo_2:checked~.wrapper__conteiner_controls label:nth-of-type(2),
 #control_photo_3:checked~.wrapper__conteiner_controls label:nth-of-type(3),
 #control_photo_4:checked~.wrapper__conteiner_controls label:nth-of-type(4) {
-	background: #0c0a0a;
+	background: #000000;
+}
+
+.wrapper__conteiner label:hover,
+#control_photo_1:hover~.wrapper__conteiner_controls label:nth-of-type(1),
+#control_photo_2:hover~.wrapper__conteiner_controls label:nth-of-type(2),
+#control_photo_3:hover~.wrapper__conteiner_controls label:nth-of-type(3),
+#control_photo_4:hover~.wrapper__conteiner_controls label:nth-of-type(4) {
+	background: #b735d8;
 }
