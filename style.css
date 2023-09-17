@@ -19,20 +19,20 @@ body {
 
 body {
 	background-color: rgb(247, 229, 169);
-	margin: 20px;
+	margin: 1.25em;
 }
 
 .wrapper__conteiner {
-	height: 650px;
-	margin: 200px auto 0;
-	width: 600px;
+	height: 40.625em;
+	margin: 12.5em auto 0;
+	width: 37.5em;
 }
 
 .photo__container {
 	height: inherit;
 	overflow: hidden;
 	width: inherit;
-	margin-bottom: 20px;
+	margin-bottom: 1.25em;
 }
 
 .photos {
@@ -41,7 +41,7 @@ body {
 	position: absolute;
 	width: inherit;
 	z-index: 0;
-	border-radius: 10px;
+	border-radius: 0.625em;
 }
 
 #control_photo_1:checked~.photo__container>.photo_1,
@@ -54,10 +54,10 @@ body {
 }
 
 .wrapper__conteiner_text {
-	max-width: 100px;
+	max-width: 6.25em;
 	font-family: 'Inclusive Sans', sans-serif;
-	font-size: 14px;
-	line-height: 20px;
+	font-size: 0.875em;
+	line-height: 1.25em;
 }
 
 .lines {
@@ -79,7 +79,7 @@ body {
 
 .wrapper__conteiner>input {
 	display: none;
-	padding: 10px
+	padding: 0.625em;
 }
 
 .wrapper__conteiner_controls {
@@ -88,22 +88,22 @@ body {
 }
 
 .wrapper__conteiner label:after {
-	border: 2px solid #0c0a0a;
+	border: 0.125em solid #0c0a0a;
 	content: " ";
 	display: block;
-	height: 12px;
-text-align: center;
-	width: 12px;
+	height: 0.75em;
+	text-align: center;
+	width: 0.75em;
 	border-radius: 50%;
 }
 
 .wrapper__conteiner label {
 	cursor: pointer;
 	display: inline-block;
-	height: 15px;
-	margin: 2px 1px 0 10px;
+	height: 0.938em;
+	margin: 0.125em 0.063em 0 0.625em;
 	position: relative;
-	width: 15px;
+	width: 0.938em;
 	border-radius: 50%;
 	transition: ease-in-out .5s;
 }
